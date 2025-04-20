@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Confirmation</title>
+  <link rel="stylesheet" href="style_1.css">
+<style>
+  .container{
+    background-color: rgb(247, 243, 232);
+    max-width: 800px;
+    height: 300px;
+  }
+  .conatin{
+    font-size: 800px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2 >Registration Successful</h2>
+    <br>
+    <center>
+    <p class="contain">Thank you, Anjali (MCA/1234)<strong id="studentName"></strong>!</p>
+    <p class="contain">for registering successfully! <strong id="studentCourse"></strong>.</p>
+  </center>
+  </div>
+
+  <script>
+    document.getElementById("studentName").innerText = localStorage.getItem("studentName");
+    document.getElementById("studentCourse").innerText = localStorage.getItem("studentCourse");
+  </script>
+</body>
+</html>
